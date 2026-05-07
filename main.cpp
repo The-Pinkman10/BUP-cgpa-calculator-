@@ -86,35 +86,35 @@ int main()
                 cin>>arr[i].att;
                 while(arr[i].att>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>arr[i].att;
                 }
                 cout<<"\nWhat's your CLASS-TEST mark for course "<<arr[i].name<<" (Out of 10)\n";
                 cin>>arr[i].ct;
                 while(arr[i].ct>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>arr[i].ct;
                 }
                 cout<<"\nWhat's your PRESENTATION mark for course "<<arr[i].name<<" (Out of 10)\n";
                 cin>>arr[i].pres;
                 while(arr[i].pres>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>arr[i].pres;
                 }
                 cout<<"\nWhat's your MID-EXAM mark for course "<<arr[i].name<<" (Out of 20)\n";
                 cin>>arr[i].mid;
                 while(arr[i].mid>20)
                 {
-                    cout<<"Invalid Input! Please enter a value within 20.";
+                    cout<<"Invalid Input! Please enter a value within 20.\n";
                     cin>>arr[i].mid;
                 }
                 cout<<"\nWhat's your FINAL mark for course "<<arr[i].name<<" (Out of 40)\n";
                 cin>>arr[i].final;
                 while(arr[i].final>40)
                 {
-                    cout<<"Invalid Input! Please enter a value within 40.";
+                    cout<<"Invalid Input! Please enter a value within 40.\n";
                     cin>>arr[i].final;
                 }
 
@@ -132,28 +132,28 @@ int main()
                 cin>>brr[i].att;
                 while(brr[i].att>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>brr[i].att;
                 }
                 cout<<"\nWhat's your QUIZ mark for course "<<brr[i].name<<" (Out of 20)\n";
                 cin>>brr[i].quiz;
                 while(brr[i].quiz>20)
                 {
-                    cout<<"Invalid Input! Please enter a value within 20.";
+                    cout<<"Invalid Input! Please enter a value within 20.\n";
                     cin>>brr[i].quiz;
                 }
                 cout<<"\nWhat's your VIVA mark for course "<<brr[i].name<<" (Out of 10)\n";
                 cin>>brr[i].viva;
                 while(brr[i].viva>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>brr[i].viva;
                 }
                 cout<<"\nWhat's your ASSIGNMENT mark for course "<<brr[i].name<<" (Out of 10)\n";
                 cin>>brr[i].assi;
                 while(brr[i].assi>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>brr[i].assi;
                 }
                 brr[i].sum=brr[i].att+brr[i].quiz+brr[i].viva+brr[i].assi+brr[i].ob;
@@ -171,28 +171,28 @@ int main()
                 cin>>crr[i].att;
                 while(crr[i].att>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>crr[i].att;
                 }
                 cout<<"\nWhat's your QUIZ mark for course "<<crr[i].name<<" (Out of 20) \n";
                 cin>>crr[i].quiz;
                 while(crr[i].quiz>20)
                 {
-                    cout<<"Invalid Input! Please enter a value within 20.";
+                    cout<<"Invalid Input! Please enter a value within 20.\n";
                     cin>>crr[i].quiz;
                 }
                 cout<<"\nWhat's your VIVA mark for course "<<crr[i].name<<" (Out of 10)\n";
                 cin>>crr[i].viva;
                 while(crr[i].viva>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>crr[i].viva;
                 }
                 cout<<"\nWhat's your ASSIGNMENT mark for course "<<crr[i].name<<" (Out of 10)\n"; 
                 cin>>crr[i].assi;
                 while(crr[i].assi>10)
                 {
-                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cout<<"Invalid Input! Please enter a value within 10.\n";
                     cin>>crr[i].assi;
                 }
                 crr[i].sum=crr[i].att+crr[i].quiz+crr[i].viva+crr[i].assi+crr[i].ob;
@@ -216,7 +216,7 @@ int main()
             }
 
             float cg=total_sum/(3*p + 1.5*q + 0.75*r);
-            cout<<"Your CGPA for this semester is : "<<fixed<<setprecision(2)<<cg;
+            cout<<"\nYour CGPA for this semester is : "<<fixed<<setprecision(2)<<cg;
             break;
         }
 
