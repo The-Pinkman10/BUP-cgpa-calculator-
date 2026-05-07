@@ -82,40 +82,40 @@ int main()
                 cin.ignore();
                 cout<<"\nWhat's the name of your course no "<<i+1<<" of credit 3?\n";
                 getline(cin,arr[i].name);
-                cout<<"\nWhat's your ATTENDANCE mark for course "<<arr[i].name<<"\n";
+                cout<<"\nWhat's your ATTENDANCE mark for course "<<arr[i].name<<" (Out of 10)\n";
                 cin>>arr[i].att;
-                if(arr[i].att>10)
+                while(arr[i].att>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>arr[i].att;
                 }
-                cout<<"\nWhat's your CLASS-TEST mark for course "<<arr[i].name<<"\n";
+                cout<<"\nWhat's your CLASS-TEST mark for course "<<arr[i].name<<" (Out of 10)\n";
                 cin>>arr[i].ct;
-                if(arr[i].ct>10)
+                while(arr[i].ct>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>arr[i].ct;
                 }
-                cout<<"\nWhat's your PRESENTATION mark for course "<<arr[i].name<<"\n";
+                cout<<"\nWhat's your PRESENTATION mark for course "<<arr[i].name<<" (Out of 10)\n";
                 cin>>arr[i].pres;
-                if(arr[i].pres>10)
+                while(arr[i].pres>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>arr[i].pres;
                 }
-                cout<<"\nWhat's your MID-EXAM mark for course "<<arr[i].name<<"\n";
+                cout<<"\nWhat's your MID-EXAM mark for course "<<arr[i].name<<" (Out of 20)\n";
                 cin>>arr[i].mid;
-                if(arr[i].mid>20)
+                while(arr[i].mid>20)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 20.";
+                    cin>>arr[i].mid;
                 }
-                cout<<"\nWhat's your FINAL mark for course "<<arr[i].name<<"\n";
+                cout<<"\nWhat's your FINAL mark for course "<<arr[i].name<<" (Out of 40)\n";
                 cin>>arr[i].final;
-                if(arr[i].final>40)
+                while(arr[i].final>40)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 40.";
+                    cin>>arr[i].final;
                 }
 
                 arr[i].sum=arr[i].att+arr[i].ct+arr[i].pres+arr[i].mid+arr[i].final+arr[i].ob;
@@ -128,33 +128,33 @@ int main()
                 cin.ignore();
                 cout<<"\nWhat's the name of your course no "<<i+1<<" of credit 1.5?\n";
                 getline(cin,brr[i].name);
-                cout<<"\nWhat's your ATTENDANCE mark for course "<<brr[i].name<<"\n";
+                cout<<"\nWhat's your ATTENDANCE mark for course "<<brr[i].name<<" (Out of 10)\n";
                 cin>>brr[i].att;
-                if(brr[i].att>10)
+                while(brr[i].att>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>brr[i].att;
                 }
-                cout<<"\nWhat's your QUIZ mark for course "<<brr[i].name<<"\n";
+                cout<<"\nWhat's your QUIZ mark for course "<<brr[i].name<<" (Out of 20)\n";
                 cin>>brr[i].quiz;
-                if(brr[i].quiz>20)
+                while(brr[i].quiz>20)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 20.";
+                    cin>>brr[i].quiz;
                 }
-                cout<<"\nWhat's your VIVA mark for course "<<brr[i].name<<"\n";
+                cout<<"\nWhat's your VIVA mark for course "<<brr[i].name<<" (Out of 10)\n";
                 cin>>brr[i].viva;
-                if(brr[i].viva>10)
+                while(brr[i].viva>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>brr[i].viva;
                 }
-                cout<<"\nWhat's your ASSIGNMENT mark for course "<<brr[i].name<<"\n";
+                cout<<"\nWhat's your ASSIGNMENT mark for course "<<brr[i].name<<" (Out of 10)\n";
                 cin>>brr[i].assi;
-                if(brr[i].assi>10)
+                while(brr[i].assi>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>brr[i].assi;
                 }
                 brr[i].sum=brr[i].att+brr[i].quiz+brr[i].viva+brr[i].assi+brr[i].ob;
                 brr[i].sum=(brr[i].sum*100.00)/60.00;
@@ -167,33 +167,33 @@ int main()
                 cin.ignore();
                 cout<<"\nWhat's the name of your course no "<<i+1<<" of credit 0.75?\n";
                 getline(cin,crr[i].name);
-                cout<<"\nWhat's your ATTENDANCE mark for course "<<crr[i].name<<"\n";
+                cout<<"\nWhat's your ATTENDANCE mark for course "<<crr[i].name<<" (Out of 10)\n";
                 cin>>crr[i].att;
-                if(crr[i].att>10)
+                while(crr[i].att>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>crr[i].att;
                 }
-                cout<<"\nWhat's your QUIZ mark for course "<<crr[i].name<<"\n";
+                cout<<"\nWhat's your QUIZ mark for course "<<crr[i].name<<" (Out of 20) \n";
                 cin>>crr[i].quiz;
-                if(crr[i].quiz>20)
+                while(crr[i].quiz>20)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 20.";
+                    cin>>crr[i].quiz;
                 }
-                cout<<"\nWhat's your VIVA mark for course "<<crr[i].name<<"\n";
+                cout<<"\nWhat's your VIVA mark for course "<<crr[i].name<<" (Out of 10)\n";
                 cin>>crr[i].viva;
-                if(crr[i].viva>10)
+                while(crr[i].viva>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>crr[i].viva;
                 }
-                cout<<"\nWhat's your ASSIGNMENT mark for course "<<crr[i].name<<"\n"; 
+                cout<<"\nWhat's your ASSIGNMENT mark for course "<<crr[i].name<<" (Out of 10)\n"; 
                 cin>>crr[i].assi;
-                if(crr[i].assi>10)
+                while(crr[i].assi>10)
                 {
-                    cout<<"Invalid input\n";
-                    return 0;
+                    cout<<"Invalid Input! Please enter a value within 10.";
+                    cin>>crr[i].assi;
                 }
                 crr[i].sum=crr[i].att+crr[i].quiz+crr[i].viva+crr[i].assi+crr[i].ob;
                 crr[i].sum=(crr[i].sum*100.00)/60.00;
@@ -216,7 +216,7 @@ int main()
             }
 
             float cg=total_sum/(3*p + 1.5*q + 0.75*r);
-            cout<<fixed<<setprecision(2)<<cg;
+            cout<<"Your CGPA for this semester is : "<<fixed<<setprecision(2)<<cg;
             break;
         }
 
@@ -236,7 +236,7 @@ int main()
             cout<<"\nEnter total credit of that semister : ";
             cin>>q;
 
-            cout<<"\nYour CGPA for this semester is "<<fixed<<setprecision(2)<<((m*p)+(n*q))/(p+q);
+            cout<<"\nYour CGPA for this year is "<<fixed<<setprecision(2)<<((m*p)+(n*q))/(p+q);
             break;
         }
     }
